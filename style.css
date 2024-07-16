@@ -7,7 +7,7 @@
 /* Setting basic styles for the body */
 body {
     position: relative;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Styling for the first navbar */
@@ -249,7 +249,7 @@ body {
 
 .card {
     width: 310px;
-    height: 100px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
@@ -401,7 +401,54 @@ body {
     width:130px;
 }
 
+.con7{
+    width:100%;
+    height:600px;
+}
 
+.con2top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.top7 h1{
+    font-size: 2.3rem;
+}
+
+.top7 h1 span{
+    color: orangered;
+}
+
+.imgcontainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 200px);
+    grid-row: repeat(4, 200px);
+    grid-gap: 20px;
+    margin-top: 30px;
+  }
+
+  .grid-item {
+    border: none;
+    padding: 10px;
+  }
+
+  .imgcontainer img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: -30px;
+  }
 
 
 
@@ -638,6 +685,19 @@ body {
     .star{
         width:90px;
     }
+
+    .imgcontainer {
+        grid-template-columns: repeat(2, 200px);
+        grid-row: repeat(2, 200px);
+        grid-gap: 5px;
+        margin-bottom: 100px;
+        margin-top: 30px;
+        overflow-x: hidden;
+      }
+
+      .top7 h1{
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -679,6 +739,8 @@ body {
 
     .imgdiv img {
         width:505px;
+        margin-left: 10px
+
     }
 
     .card {
@@ -690,6 +752,13 @@ body {
     .con2 {
         margin-top: 30px;
         width: 100%;
+    }
+
+    .con2top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .max3 {
@@ -704,10 +773,22 @@ body {
         width: 100%;
         margin-left: 0;
         margin-top: -130px;
+        height: 600px;
+        /* background-color: aqua; */
+        overflow-x: hidden;
+
+    }
+
+    .con6{
+        width: 100%;
+        overflow-x: hidden;
+
     }
 
     .max4{
         margin-left:20px;
+        overflow-x: hidden;
+
     }
 
     .imgHolder img{
@@ -720,6 +801,8 @@ body {
         margin-left:40px;
         margin-bottom: 33px;
     }
+
+   
 
    
 }
